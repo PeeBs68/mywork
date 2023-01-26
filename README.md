@@ -1,3 +1,3 @@
 # mywork
 
-Test3 - just playing around...
+My 2nd program - Guessing Game for Sarah
