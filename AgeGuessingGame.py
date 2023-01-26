@@ -6,7 +6,7 @@ while isCorrect == False:
     b.append(response)
     if int(response) == 21:
         isCorrect = True
-        print ('Yep, thats right')
+        print ('Yep, thats right, well done')
         print ('You tried...' + str(b))
     else:
         print ('Nope, try again')
