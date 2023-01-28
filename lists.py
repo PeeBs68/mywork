@@ -12,7 +12,7 @@ l.append ('four')
 # print (l)
 # to clear the list but not delete it
 # l.clear()
-# print (l)
+print (l)
 # combining two lists
 l2 = ['five', 'six']
 print (l)
