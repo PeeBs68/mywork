@@ -5,6 +5,7 @@ https://www.markdownguide.org/cheat-sheet
 
 # Tables
 
+# Creating a TOC
 TOC  
 [1. helloworld](#1-helloworld)  
 [2. second](#1-second)  
@@ -16,4 +17,37 @@ TOC
 | --- | ---| ---|
 | blah | blah | blah
 
-#1. helloworld
+# 1. helloworld
+helloworld.py is the first task etc...
+# 2. second
+second task
+# 3. third
+
+# 4. fourth
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")  
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")
+print ("Hi there")  
+print ("Hi there")
+print ("Hi there")
+# adding blank spaces for testing links
+# 4. fourth
