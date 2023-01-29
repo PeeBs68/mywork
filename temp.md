@@ -4,15 +4,14 @@ Markdown Cheat Sheet
 https://www.markdownguide.org/cheat-sheet
 
 # tables and internal links
-# for fun
-# creating a TOC
-TOC  
+
+Table Of Contents  
 [1. helloworld](#1-helloworld)  
 [2. second](#2-second)  
 [3. third](#3-third)  
 [4. fourth](#4-fourth)
 
-# same as above but in a table format
+same as above but in a table format
 | Filename | Description | Quick Link |
 | --- | ---| ---|
 | helloworld | Task1 | [helloworld](#1-helloworld) 
@@ -30,3 +29,4 @@ second task
 third task
 # 4. fourth
 fourth task
+
