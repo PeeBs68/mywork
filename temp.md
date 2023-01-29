@@ -3,9 +3,9 @@
 Markdown Cheat Sheet
 https://www.markdownguide.org/cheat-sheet
 
-# Tables and internal links
+# tables and internal links
 
-# Creating a TOC
+# creating a TOC
 TOC  
 [1. helloworld](#1-helloworld)  
 [2. second](#2-second)  
