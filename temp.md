@@ -1,10 +1,10 @@
 # for playing around with formatting options for readme files
 
-Markdown Sheat Sheet
+Markdown Cheat Sheet
 https://www.markdownguide.org/cheat-sheet
 
 # Tables
 
-| Header | Word |
-| --- | ---|
-| blah | blah |
+| Filename | Description | Quick Link |
+| --- | ---| ---|
+| blah | blah | blah
