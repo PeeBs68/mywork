@@ -8,14 +8,15 @@ https://www.markdownguide.org/cheat-sheet
 # Creating a TOC
 TOC  
 [1. helloworld](#1-helloworld)  
-[2. second](#1-second)  
-[3. third](#1-third)  
-[4. fourth](#1-fourth)
+[2. second](#2-second)  
+[3. third](#3-third)  
+[4. fourth](#4-fourth)
 
 
 | Filename | Description | Quick Link |
 | --- | ---| ---|
-| blah | blah | blah
+| helloworld | Task1 | [helloworld](#1-helloworld) 
+| second | Task2 | [second](#2-second) 
 
 # 1. helloworld
 helloworld.py is the first task etc...
