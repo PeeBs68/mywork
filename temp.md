@@ -32,5 +32,4 @@ fourth task
 
 # External Links
 
-https://github.com/PeeBs68/mywork/README.md
 
