@@ -1,3 +1,4 @@
+# playing around with while and if loops
 answer = 7
 isCorrect = False
 print ("guess a number between 1 and 9")
