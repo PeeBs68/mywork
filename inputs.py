@@ -4,6 +4,9 @@ age = input("What is your age? ")
 # print(age)
 print ("Your age is", age)
 
+# This would work also
+# print (f"Your age is {age}")
+
 name = input("What is your name? ")
 # print(name)
 print ("Your name is", name)
