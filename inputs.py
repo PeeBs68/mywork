@@ -1,11 +1,13 @@
 # sample for taking in input and printing to the console
 
-age = input("What is your age? ")
+# Adding int takes the input as an integer rather than string
+age = int(input("What is your age? "))
 # print(age)
-print ("Your age is", age)
+print (f"Your age is {age}")
 
-# This would work also
-# print (f"Your age is {age}")
+# print ("Your age is", age) this would also work but use the above format
+
+
 
 name = input("What is your name? ")
 # print(name)
