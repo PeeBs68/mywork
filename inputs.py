@@ -8,8 +8,6 @@ print (f"Your age is {age}")
 
 # print ("Your age is", age) this would also work but use the above format
 
-
-
 name = input("What is your name? ")
 # print(name)
 print ("Your name is", name)
