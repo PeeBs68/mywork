@@ -1,4 +1,4 @@
-# lab2.2.py
+# addone.py
 # author: Phelim Barry
 # small programs
 
