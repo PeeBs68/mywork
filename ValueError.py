@@ -14,3 +14,9 @@ print (num1)
 
 # above section replaces this simplier line whcih has no validations
 # num1 = int(input("Input the first number in cents: "))
+
+#References
+#Details on how to handle non integer inputs taken from Stackoverflow
+#https://stackoverflow.com/questions/62768087/how-can-i-not-allow-letters-and-only-allow-numbers-in-an-input-on-python-3 
+#and details on the use of Try/Except taken from  
+#https://www.w3schools.com/python/python_try_except.asp
