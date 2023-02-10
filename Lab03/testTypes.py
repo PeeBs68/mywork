@@ -27,3 +27,4 @@ print('variable {} is of type:{} and value: {}'.format('float1', type(float1), f
 print('variable {} is of type:{} and value: {}'.format('boolean1', type(boolean1), boolean1))
 print('variable {} is of type:{} and value: {}'.format('str1', type(str1), str1))
 print('variable {} is of type:{} and value: {}'.format('list1', type(list1), list1))
+print(f"variable Int1 is of type {var1} and value: {int1}")
