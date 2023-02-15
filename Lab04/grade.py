@@ -1,6 +1,11 @@
 # Script to calculate grades
 
-value = int(input("Enter the grade "))
+import math
+
+# Extra bit to deal with percentages
+val1 = float(input("Enter the grade "))
+value = round(val1)
+
 if value > 100 or value <0:
     print ("Invalid grade")
 elif value <40:
