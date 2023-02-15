@@ -4,6 +4,8 @@ import math
 
 # Extra bit to deal with percentages
 val1 = float(input("Enter the grade "))
+# Remember round will only rould to the nearest EVEN number!!! It works in this case but 
+# be careful using it
 value = round(val1)
 
 if value > 100 or value <0:
