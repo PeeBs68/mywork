@@ -8,5 +8,6 @@ while isCorrect == False:
         isCorrect = True
         print ('Yep, thats right, well done')
         print ('You tried...' + str(b))
+        print (f"You tried...{b}")
     else:
         print ('Nope, try again')
