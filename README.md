@@ -25,7 +25,6 @@ graph TD;
 ```
 
 ```mermaid
-# can use graph TD also
 flowchart TD;
     A[Enter a number] --> B(Number ==1?);
     B -- Yes --> C[divide by 2];
