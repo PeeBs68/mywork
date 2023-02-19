@@ -26,7 +26,7 @@ graph TD;
 
 ```mermaid
 graph TD;
-    While number >1 -->B;
+    A[Enter a number] -->B(While number >1);
     A-->C;
     B-->D;
     C-->D;
