@@ -25,10 +25,11 @@ graph TD;
 ```
 
 ```mermaid
+# can use graph TD also
 flowchart TD;
     A[Enter a number] --> B(Number ==1?);
-    B -- Even --> C[divide by 2];
-    B -- Odd --> D[*3+1];
+    B -- Yes --> C[divide by 2];
+    B -- No --> D[*3+1];
     C-->E[End];
     D-->E[End];
 ```
