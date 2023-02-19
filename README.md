@@ -3,8 +3,9 @@
 My Work area
 
 Input:
-```
-Input the first number in cents: 2654
+```python
+for i in list:
+    print(i)
 ```
 Output:
 ```
