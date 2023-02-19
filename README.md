@@ -2,7 +2,11 @@
 
 My Work area
 
-
-```python
-hello world
+Input:
+```
+Input the first number in cents: 2654
+```
+Output:
+```
+The total in Euros and Cents is: €23.54
 ```
