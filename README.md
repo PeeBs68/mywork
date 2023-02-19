@@ -23,3 +23,11 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
+```mermaid
+graph TD;
+    While number >1 -->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
