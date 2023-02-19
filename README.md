@@ -26,7 +26,7 @@ graph TD;
 
 ```mermaid
 graph TD;
-    A[Enter a number] -->B(While number >1);
+    A[Enter a number] -->B(Number ==1?);
     B -- Even -->C[divide by 2];
     B -- Odd -->D[*3+1];
     C-->E[End];
