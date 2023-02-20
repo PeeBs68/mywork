@@ -29,7 +29,7 @@ flowchart TD;
     A[Enter a number] --> B{number == 1?};
     B -- Yes --> G[End];
     B -- No --> C{Even?};
-    C -- Yes --? G[End];
+    C -- Yes --> G[End];
     C -- No --> G[End];
     E-->B;
 ```
