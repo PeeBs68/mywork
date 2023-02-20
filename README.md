@@ -29,7 +29,7 @@ flowchart TD;
     A[Enter a number] --> B{number == 1?};
     B -- Yes --> G[End];
     B -- No --> C{Even?};
-    C -- Yes --> D[/2];
+    C -- Yes --> D[divide2];
     C -- No --> E[*3-1];
     D --> B;
     E --> B;
