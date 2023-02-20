@@ -30,7 +30,7 @@ flowchart TD;
     B -- Yes --> H[End];
     B -- No --> C{Even?};
     C -- Yes --> H[/2];
-    E-->B;
+    H -->B;
     C -- No --> E[*3-1];
     H[*3-1] --> B;
     E-->B;
