@@ -27,11 +27,10 @@ graph TD;
 ```mermaid
 flowchart TD;
     A[Enter a number] --> B{number == 1?};
-    B -- Yes --> H[End];
+    B -- Yes --> G[End];
     B -- No --> C{Even?};
-    C -- Yes --> H[/2];
-    H -->B;
+    C -- Yes --> D[/2];
+    D --> B;
     C -- No --> E[*3-1];
-    H[*3-1] --> B;
-    E-->B;
+    E --> B;
 ```
