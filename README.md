@@ -28,7 +28,7 @@ graph TD;
 flowchart TD;
     A[Enter a number] --> B{number == 1?};
     B -- No --> C{Even?};
-    B -- Yes ---> G[End];
+    B -- Yes ----> G[End];
     C -- Yes --> D[divide by 2];
     D --> B;
     C -- No --> E[multiple by 3 and add 1];
