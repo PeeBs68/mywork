@@ -27,8 +27,8 @@ graph TD;
 ```mermaid
 flowchart TD;
     A[Enter a number] --> B{Is the number 1?};
-    B -- Even --> C[divide by 2];
-    B -- Odd --> D[*3+1];
-    C-->E[End];
-    D-->E[End];
+    B -- Yes --> F;[End]
+    B -- No --> C;
+    C{Is Even? -->E[*2];
+    E-->F[End];
 ```
