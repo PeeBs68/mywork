@@ -32,5 +32,5 @@ flowchart TD;
     C -- Yes --> D[divide by 2];
     D --> B;
     C -- No --> E[multiple by 3 and add 1];
-    E --> B;
+    E -> B;
 ```
