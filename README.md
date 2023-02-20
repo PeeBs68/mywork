@@ -30,7 +30,7 @@ flowchart TD;
     B -- Yes --> G[End];
     B -- No --> C{Even?};
     C -- Yes --> D[divide2];
-    C -- No --> E[*3-1];
     D --> B;
+    C -- No --> E[*3-1];
     E --> B;
 ```
