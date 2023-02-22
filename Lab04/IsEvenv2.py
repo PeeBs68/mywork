@@ -1,4 +1,4 @@
-# For general testing of anything...
+# Lab04 4.1
 
 num = int(input("Enter a number "))
 while num != -1:
