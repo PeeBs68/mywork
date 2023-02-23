@@ -14,6 +14,8 @@ while counter <10:
     counter += 1
 print (f" Queue is {numbers}")
 
+#numbers2 = numbers
+
 for x in numbers:
     numbers.pop()
     print (x)
