@@ -9,15 +9,13 @@ top_range = 100
 
 while counter <10:
     number = random.randint(1,top_range)
-#    print(f"random Number generated is {number}")
     numbers.append(number)
     counter += 1
-print (f" Queue is {numbers}")
+print (f"Queue is {numbers}")
 
-#numbers2 = numbers
 
-for x in numbers:
-    numbers.pop()
-    print (x)
-    print (f" Queue is now {numbers}")
-
+while (len(numbers) > 0):
+    num_before_pop = numbers[0]
+    numbers.pop(0)
+    print (f"Current number is {num_before_pop} and the queue is now {numbers}")
+print ("Queue is now empty")
