@@ -14,6 +14,5 @@ print (f"queue is {queue}")
 while len(queue) != 0:
     currentNumber = queue.pop(0)
     print (f"current num is {currentNumber} and the queue is {queue}")
-
 print ("the queue is now empty")
 
