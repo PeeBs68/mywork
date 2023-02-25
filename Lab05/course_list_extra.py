@@ -8,8 +8,6 @@ student_file2 = {
         "Grade" : ""}
     ]
 }
-
-print (student_file2)
 person1 = input("Enter a name: ")
 student_file2["Name"]=person1
 course1 = "temp" #dummy just to make the 1st loop run
@@ -22,6 +20,8 @@ while len(course1)!= 0:
         student_file2["Results"].append(grade1)
 print (student_file2)
 
-#print(f"Student: {student_file2['Name']}")
-#for course in student_file2["Results"]:
-#    print (f"\t{course['Course']} : {course['Grade']}")
+print(f"Student: {student_file2['Name']}")
+
+for course in student_file2["Results"]:
+    print (f"\t{course['Course']} : {course['Grade']}")
+

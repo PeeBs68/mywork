@@ -10,6 +10,7 @@ student_file = {
         }
     ]
 }
+print (student_file)
 print(f"Student: {student_file['name']}")
 for course in student_file["Results"]:
     print (f"\t{course['Course']} : {course['Grade']}")
