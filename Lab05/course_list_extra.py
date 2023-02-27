@@ -5,7 +5,8 @@ student_file2 = {
     "Name" : "", 
     "Results" : [{
         "Course" : "",
-        "Grade" : ""}
+        "Grade" : "",
+        "Course" : ""}
     ]
 }
 person1 = input("Enter a name: ")
