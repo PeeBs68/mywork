@@ -10,11 +10,12 @@ while name != "":
     else:
         modules.append(module)
         grade = input("Enter a grade: ")
-    results.update({"Course: " + module : "Grade: " + grade})
-    dict.update({name:results})
+        results.update({"Course: " + module : "Grade: " + grade})
+        dict.update({name:results})
 print (dict)
 
-print (f"Module: {module}, Grade: {grade}")
+print(f"Student: {name}")
 
-#for x in dict:
-#    print (f"\t{modules['module']} : {results['results']}")
+for x in modules:
+    print (f"\tModule: {module}, Grade: {grade}")
+
