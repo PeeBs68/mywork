@@ -11,7 +11,7 @@ while name != "":
         modules.append(module)
         grade = input("Enter a grade: ")
         results.update({"Course: " + module : "Grade: " + grade})
-        dict.update({name:results})
+dict.update({name:results})
 print (dict)
 
 print(f"Student: {name}")
