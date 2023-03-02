@@ -1,11 +1,10 @@
 # Lab06.3
 # Create the menu items function
 
-def doAdd()
-    return a1
+def doAdd():
     print("Adding")
 
-def doView()
+def doView():
     print("Viewing")
 
 def menu():
@@ -17,7 +16,7 @@ def menu():
     while item != "q":
         if item == "a":
             add = doAdd()
-        else
+        else:
             doView()
 
     return item
