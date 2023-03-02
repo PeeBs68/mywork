@@ -1,6 +1,7 @@
 # Lab06.3
 # Create the menu items function
 
+
 def doAdd():
     print("Adding")
 
@@ -16,6 +17,7 @@ def menu():
 
     return item
 
+# the actual code
 item = menu()
 while (item != "q"):
     if item == "a":
