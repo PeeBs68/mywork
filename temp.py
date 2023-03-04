@@ -12,24 +12,24 @@
 
 #For assignment5 - day of the week
 # Getting the day - NOTE Monday = 1, Tuesday = 2, etc
-import datetime
+@import datetime
 #now = datetime.datetime.now()
 #print (now)
 #today = datetime.datetime.today()
 #print (today)
 #from https://stackoverflow.com/questions/9847213/how-do-i-get-the-day-of-week-given-a-date
-day = datetime.datetime.today().weekday()
-print (day) # use this one
+#day = datetime.datetime.today().weekday()
+#print (day) # use this one
 #now, 2 options to know what to print out
 #1 create a list ("monday", "Tuesday" etc)
 # then match the day with the position in the list
-days = ["Monday", "Tuesday", "Wednesday", "thursday", "Friday", "Saturday", "Sunday"]
+#days = ["Monday", "Tuesday", "Wednesday", "thursday", "Friday", "Saturday", "Sunday"]
 # print (days[1])
 #Or if day number between 0 and 4 then its a weekday else is a weekend
-if day >=0 and day <5:
-    print (f"Today is a weekday, it's only {days[day]}")
-else:
-    print (f"Today is {days[day]} so its the weekend!!!")
+#if day >=0 and day <5:
+#    print (f"Today is a weekday, it's only {days[day]}")
+#else:
+#    print (f"Today is {days[day]} so its the weekend!!!")
 #print (f"Today is: {days[day]}")
 
 # This is very short, maybe add the actual day from the list as well - something like
@@ -37,3 +37,25 @@ else:
 #    print (f"Today is a weekday - it's only {days[day]}")
 #else:
 #    print ("Its the weekend")
+
+#Sample code for squareroot task
+#def squareRoot(n, l) :
+# Assuming the sqrt of n as n only
+#    x = n
+    # To count the number of iterations
+#    count = 0
+#    while (1) :
+#        count += 1
+        # Calculate more closed x
+#        root = 0.5 * (x + (n / x))
+        # Check for closeness
+#        if (abs(root - x) < l) :
+#            break
+        # Update root
+#        x = root
+#    return root
+# Driver code
+#if __name__ == "__main__" :
+#    n = 327
+#    l = 0.00001
+#    print(squareRoot(n, l))
