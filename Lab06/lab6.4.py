@@ -1,44 +1,21 @@
-# Lab06.3
-# Adding students using the doAdd function
-dict = {}
-results = {}
-modules = []
-grades = []
+#Lab6.4
 
-def doAdd():
-    name = input("Enter a name: ")
-    module = "temp" #Used just to get the loop running - must find a better way for this
-    # Finish if nothing is entered for module
-    while len(module)!= 0:
-        module = input ("Enter a module: ")
-        if len(module)>0:
-            modules.append(module)
-            grade = input("Enter a grade: ")
-            grades.append(grade)
-            results.update({"Course: " + module : "Grade: " + grade})
-    dict.update({name:results})
-    print (dict)
+#had to copy Andres - my list/dict was a mess!
+#create a list just for the names
+students = []
 
+#temp - doesn't do anything for noe
+def readModules():
+    return []
 
-def doView():
-    print("Viewing")
+def doAdd(students):
+    currentStudent = {}
+    currentStudent ["name"] = input("Enter a name: ")
+    currentStudent ["modules"] = readModules()
 
-def menu():
-    print("Here are your options")
-    print("\t(a) Add new student")
-    print("\t(v) View Students")
-    print("\t(q) Quit")
-    item = (input("Type one letter (a/v/q):  "))
+    students.append(currentStudent)
 
-    return item
-
-item = menu()
-while (item != "q"):
-    if item == "a":
-        doAdd()
-    elif item == "v":
-        doView()
-    elif item != "q":
-        print ("It needs to be either a,v,q")
-    item = menu()
-print (f"You choose: {item} to quit")
+doAdd(students)
+#add another
+doAdd(students)
+print (students)
