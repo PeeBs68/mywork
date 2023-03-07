@@ -60,24 +60,23 @@
 #    n = 327
 #    l = 0.00001
 #    print(squareRoot(n, l))
-root=0
-def sqrt(x):
-        r = x
-        
-        while abs(x - r * r) > tolerence_level:
-                print (abs(x - r * r))
-                r = (r+(x/r))/2
-                print (r)
-                root = r
-                print (root)
+#root=0
+def sqrt(num):
+        tempnum = num
+        while abs(tempnum - num * num) > tolerence_level:
+#                print (abs(tempnum - num * num))
+                num = (num+(tempnum/num))/2
+                print (num)
+                root = num
+#                print (root)
         return root
 
 # the actual code
 #We can set these two if we want or just ignore them
 num_of_iterations = 10
 tolerence_level = .000001
-r = int((input("Enter a number:  ")))
+num = int((input("Enter a number:  ")))
 #Run the funtion with arguements if need be
-sqrt(r)
+root = sqrt(num)
 #print (f"Answer = {newnumber}")
-print (f"Root = {root}")
+print (f"Root of {num} = {root} using Newtons method")
