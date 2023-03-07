@@ -12,7 +12,7 @@
 
 #For assignment5 - day of the week
 # Getting the day - NOTE Monday = 1, Tuesday = 2, etc
-@import datetime
+#import datetime
 #now = datetime.datetime.now()
 #print (now)
 #today = datetime.datetime.today()
@@ -60,3 +60,24 @@
 #    n = 327
 #    l = 0.00001
 #    print(squareRoot(n, l))
+root=0
+def sqrt(x):
+        r = x
+        
+        while abs(x - r * r) > tolerence_level:
+                print (abs(x - r * r))
+                r = (r+(x/r))/2
+                print (r)
+                root = r
+                print (root)
+        return root
+
+# the actual code
+#We can set these two if we want or just ignore them
+num_of_iterations = 10
+tolerence_level = .000001
+r = int((input("Enter a number:  ")))
+#Run the funtion with arguements if need be
+sqrt(r)
+#print (f"Answer = {newnumber}")
+print (f"Root = {root}")
