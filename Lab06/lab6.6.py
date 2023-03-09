@@ -6,7 +6,7 @@ def doAdd(students):
     currentStudent ["modules"] = readModules()
     students.append(currentStudent)
 
-def doView():
+def doView(students):
     print("Viewing")
     print(students)
 
@@ -41,7 +41,7 @@ while (item != "q"):
     if item == "a":
         doAdd(students)
     elif item == "v":
-        doView()
+        doView(students)
     elif item != "q":
         print ("It needs to be either a,v,q")
     item = menu()
