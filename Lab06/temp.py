@@ -21,7 +21,7 @@
 
 #doAdd()
 
-#create a list
+'''#create a list
 students = []
 
 def readModules():
@@ -84,3 +84,18 @@ while (item != "q"):
         print ("It needs to be either a,v,q")
     item = menu()
 print (f"You choose: {item} to quit")
+'''
+
+number = float(input("enter a number : "))
+apprx_root = number * 0.5
+print (apprx_root)
+
+more_accurate = 0.5 * (apprx_root + number/apprx_root)
+print (more_accurate)
+
+
+while (number != more_accurate*more_accurate):
+    more_accurate = 0.5 * (more_accurate + number/more_accurate)
+    print (more_accurate, apprx_root)
+
+print (more_accurate)
