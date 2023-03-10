@@ -16,15 +16,14 @@ def read_number():
 #check that the file exists - assume in the current directory
 if os.path.isfile(FILENAME):
     print ("The file exists!!!")
+    counter = read_number()
+    counter = int(counter)
+    newcounter = int(counter)+1
+    update_counter(newcounter)
+    print (f"Counter is now: {newcounter}")
 else:
-    print ("The file is not there - I'll create one")
+    print ("The file is not there - I'll create one and add a zero")
     f = open("counter9.txt", "x")
     counter = 0
     f.write(str(counter))
-
-counter = read_number()
-newcounter = int(counter)+1
-
-update_counter(newcounter)
-
-print (newcounter)
+    print (f"Counter is now: {counter}")
