@@ -28,8 +28,8 @@ def doSave(students):
 def doRead(students):
     with open(FILENAME, 'rt') as f:
         students = json.load(f)
-        print (students)
-
+        doView(students)
+    return students
 
 def readModules():
     #create another list
