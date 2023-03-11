@@ -29,6 +29,7 @@ def doRead(students):
     with open(FILENAME, 'rt') as f:
         students = json.load(f)
         doView(students)
+        print (students)
     return students
 
 def readModules():
@@ -48,6 +49,7 @@ def readModules():
 
 def menu():
     print("Here are your options")
+    print (students)
     print("\t(a) Add new student")
     print("\t(v) View Students")
     print("\t(s) Save Students")
