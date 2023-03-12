@@ -32,11 +32,6 @@ def doRead(students):
         #doView(students)
         #print (students)
 
-def doLoad(students):
-    print("in do load")
-    with open (FILENAME, "rt") as f:
-        return json.load(f)
-
 def readModules():
     #create another list
     modules = []
