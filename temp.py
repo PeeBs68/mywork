@@ -148,7 +148,7 @@ print (f"\nThe account number in masked format is {acc_num2_masked}")'''
 
 # input section 
 # input the 1st input as an integer
-first_number = input("\nInput the first number in Cents: ")
+'''first_number = input("\nInput the first number in Cents: ")
 while True:
         try:
                 first_number = int(first_number)
@@ -173,4 +173,17 @@ numtotal = int(first_number + second_number)/100
 
 # output section
 # Add a new line and print the output formatted to 2 decimal places
-print (f"\nThe total in Euros and Cents is: €{numtotal:.2f}")
+print (f"\nThe total in Euros and Cents is: €{numtotal:.2f}")'''
+
+'''first_number = int(input("\nInput the first number in Cents: "))
+if (type(first_number) != int):
+    print ("Not an int")'''
+
+
+try:
+   mark = int(input("Please enter the exam mark out of 100 "))
+except ValueError:
+   print("\nPlease only use integers")
+   mark = int(input("Please enter the exam mark out of 100 "))
+
+print (mark)
