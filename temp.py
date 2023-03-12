@@ -61,7 +61,8 @@
 #    l = 0.00001
 #    print(squareRoot(n, l))
 #root=0
-def sqrt(num):
+
+'''def sqrt(num):
         tempnum = num
         while abs(tempnum - num * num) > tolerence_level:
 #                print (abs(tempnum - num * num))
@@ -80,3 +81,15 @@ num = int((input("Enter a number:  ")))
 root = sqrt(num)
 #print (f"Answer = {newnumber}")
 print (f"Root of {num} = {root} using Newtons method")
+'''
+
+import sys
+FILENAME = sys.argv[1]
+#Note this will be an exact search - i.e. lowercase e only
+letter_to_find = "r"
+with open(FILENAME, 'r') as f:
+        string1 = f.read()
+num_of_e = string1.count(letter_to_find)
+print (f"The number of {letter_to_find}'s in {FILENAME} is {num_of_e}")
+
+#https://www.geeksforgeeks.org/command-line-arguments-in-python/
