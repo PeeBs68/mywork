@@ -5,7 +5,7 @@ FILENAME = "counter.txt"
 
 def update_counter(newcounter):
     with open(FILENAME, 'wt') as f:
-        counter = f.write(str(newcounter))
+        counter = f.write(str(newcounter)) #NOTE - counter here is the number of characters written
   
 def read_number():
     with open(FILENAME, 'r') as f:
