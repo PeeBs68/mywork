@@ -1,1 +1,1 @@
-[{"name": "Mary", "modules": [{"name": "Iri", "grade": 99}]}]
+[{"name": "John", "modules": [{"name": "Irish", "grade": 56}]}, {"name": "Mary", "modules": [{"name": "Maths", "grade": 87}]}]

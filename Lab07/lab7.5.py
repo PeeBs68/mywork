@@ -27,9 +27,8 @@ def doSave(students):
 
 def doOpen(students):
     with open(FILENAME, 'rt') as f:
-       students = json.load(f)
-       print (students)
-       return students
+        x = json.load(f)
+        return x
 
 def readModules():
     #create another list
@@ -48,7 +47,6 @@ def readModules():
 
 def menu():
     print("Here are your options")
-    print (students)
     print("\t(a) Add new student")
     print("\t(v) View Students")
     print("\t(s) Save Students")
@@ -69,7 +67,7 @@ while (item != "q"):
     elif item == "s":
         doSave(students)
     elif item == "l":
-        doOpen(students)
+        students = doOpen(students)
     elif item != "q":
         print ("It needs to be either a,v,s,l,q")
     item = menu()
