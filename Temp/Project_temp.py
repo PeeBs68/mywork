@@ -31,3 +31,39 @@ Repository: Iris Data Set http://archive.ics.uci.edu/ml/datasets/Iris
 ''' Useful link here
 https://www.youtube.com/watch?v=vmEHCJofslg&start=1068
 '''
+
+'''data file attributes
+Attribute Information:
+
+1. sepal length in cm
+2. sepal width in cm
+3. petal length in cm
+4. petal width in cm
+5. class:
+-- Iris Setosa
+-- Iris Versicolour
+-- Iris Virginica'''
+
+'''Read in the file:
+Using pandas
+import pandas
+ 
+# reading the CSV file
+csvFile = pandas.read_csv('xxx.csv')
+
+# displaying the contents of the CSV file
+print(csvFile)'''
+
+
+
+'''Read in the file:
+Using csv
+# opening the CSV file
+with open('Giants.csv', mode ='r')as file:
+   
+  # reading the CSV file
+  csvFile = csv.reader(file)
+ 
+  # displaying the contents of the CSV file
+  for lines in csvFile:
+        print(lines)'''
