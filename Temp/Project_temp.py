@@ -27,3 +27,7 @@ Repository: Iris Data Set http://archive.ics.uci.edu/ml/datasets/Iris
 3. Outputs a scatter plot of each pair of variables.
 4. Performs any other analysis you think is appropriate
 '''
+
+''' Useful link here
+https://www.youtube.com/watch?v=vmEHCJofslg&start=1068
+'''
