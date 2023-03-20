@@ -44,26 +44,28 @@ Attribute Information:
 -- Iris Versicolour
 -- Iris Virginica'''
 
+#import pandas as pd
+#import csv
+'''csvFile = pd.read_csv('iris.data')
+print(csvFile)
+
+with open('iris.data', mode ='r') as file:
+    csvFile = csv.reader(file)
+    csvFile.close()
+print (csvFile)
+
+#for lines in csvFile:
+#    print(lines)'''
+
 '''Read in the file:
-Using pandas
+Using pandas'''
 import pandas
  
 # reading the CSV file
-csvFile = pandas.read_csv('xxx.csv')
-
+csvFile = pandas.read_csv('iris.data', sep='\t', header=None)
+csvFile.columns = ["Sequence", "Start", "End", "Coverage", "ddd"]
 # displaying the contents of the CSV file
-print(csvFile)'''
+#print(csvFile)
+#print(csvFile[['col1', 'col2', 'col3']].head(10))
+print(csvFile.head(10))
 
-
-
-'''Read in the file:
-Using csv
-# opening the CSV file
-with open('Giants.csv', mode ='r')as file:
-   
-  # reading the CSV file
-  csvFile = csv.reader(file)
- 
-  # displaying the contents of the CSV file
-  for lines in csvFile:
-        print(lines)'''
