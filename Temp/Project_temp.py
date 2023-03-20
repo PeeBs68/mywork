@@ -62,3 +62,15 @@ for x in csvFile['Sepal L']:
 
 for x in csvFile.columns:
     print(csvFile[x].unique())
+
+Total = csvFile['Sepal L'].sum()
+print(f"Total : {Total}")
+
+Mean = csvFile['Sepal L'].mean()
+print(f"Mean : {Mean}")
+
+Max = csvFile['Sepal L'].max()
+print(f"Max : {Max}")
+
+Min = csvFile['Sepal L'].min()
+print(f"Min : {Min}")
