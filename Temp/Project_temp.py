@@ -51,12 +51,14 @@ import pandas as pd
 csvFile = pd.read_csv('iris.data', sep= ",", header=None)
 headers =  ["Sepal L", "Sepal W", "Petal L", "Petal W", "Class"]
 csvFile.columns = headers
-#csvFile.columns = ["Sequence", "Start", "End", "Coverage", "ddd"]
-#csvFile2 = pd.DataFrame(csvFile, index = ["day1", "day2", "day3", "day4", "day5"])
 # displaying the contents of the CSV file
 print(csvFile)
 print(csvFile.to_string())
 print (csvFile.loc[148])
-#Cov = pd.read_csv("path/to/file.txt", 
-#                  sep='\t', 
-#                  names=["Sequence", "Start", "End", "Coverage"])
+print (csvFile.columns)
+
+for x in csvFile['Sepal L']:
+    print(x)
+
+for x in csvFile.columns:
+    print(csvFile[x].unique())
