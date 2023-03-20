@@ -44,28 +44,19 @@ Attribute Information:
 -- Iris Versicolour
 -- Iris Virginica'''
 
-#import pandas as pd
-#import csv
-'''csvFile = pd.read_csv('iris.data')
-print(csvFile)
 
-with open('iris.data', mode ='r') as file:
-    csvFile = csv.reader(file)
-    csvFile.close()
-print (csvFile)
-
-#for lines in csvFile:
-#    print(lines)'''
-
-'''Read in the file:
-Using pandas'''
-import pandas
+import pandas as pd
  
 # reading the CSV file
-csvFile = pandas.read_csv('iris.data', sep='\t', header=None)
-csvFile.columns = ["Sequence", "Start", "End", "Coverage", "ddd"]
+csvFile = pd.read_csv('iris.data', sep= ",", header=None)
+headers =  ["Sepal L", "Sepal W", "Petal L", "Petal W", "Class"]
+csvFile.columns = headers
+#csvFile.columns = ["Sequence", "Start", "End", "Coverage", "ddd"]
+#csvFile2 = pd.DataFrame(csvFile, index = ["day1", "day2", "day3", "day4", "day5"])
 # displaying the contents of the CSV file
-#print(csvFile)
-#print(csvFile[['col1', 'col2', 'col3']].head(10))
-print(csvFile.head(10))
-
+print(csvFile)
+print(csvFile.to_string())
+print (csvFile.loc[148])
+#Cov = pd.read_csv("path/to/file.txt", 
+#                  sep='\t', 
+#                  names=["Sequence", "Start", "End", "Coverage"])
