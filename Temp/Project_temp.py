@@ -52,17 +52,24 @@ csvFile = pd.read_csv('iris.data', sep= ",", header=None)
 headers =  ["Sepal L", "Sepal W", "Petal L", "Petal W", "Class"]
 csvFile.columns = headers
 # displaying the contents of the CSV file
-print(csvFile)
+'''print(csvFile)
 print(csvFile.to_string())
 print (csvFile.loc[148])
 print (csvFile.columns)
 
 for x in csvFile['Sepal L']:
     print(x)
+'''
+#for x in csvFile.columns:
+#    print(csvFile[x].unique())
 
-for x in csvFile.columns:
-    print(csvFile[x].unique())
+#csvFile.nunique()
+#unique_class = csvFile.Class.unique()
+#print (unique_class)
 
+print(csvFile.Class.unique())
+#print(csvFile.unique(csvFile['Class']))
+'''
 Total = csvFile['Sepal L'].sum()
 print(f"Total : {Total}")
 
@@ -74,3 +81,4 @@ print(f"Max : {Max}")
 
 Min = csvFile['Sepal L'].min()
 print(f"Min : {Min}")
+'''
