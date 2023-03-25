@@ -1,6 +1,6 @@
 Iris Type : Iris-setosa
-Attribute : Sepal L, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Attribute : Sepal W, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
 Iris Type : Iris-versicolor
-Attribute : Sepal L, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Attribute : Sepal W, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
 Iris Type : Iris-virginica
-Attribute : Sepal L, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Attribute : Sepal W, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007

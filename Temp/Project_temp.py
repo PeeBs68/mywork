@@ -69,20 +69,24 @@ unique_class = iris_csv.Class.unique()
 def summary_data(Class):
       #need to loop through each attribute here
       #use headers1 list
-      print (headers1[0])
-      Total = iris_csv[headers1[0]].sum()
-      Mean = iris_csv[headers1[0]].mean()
-      Max = iris_csv[headers1[0]].max()
-      Min = iris_csv[headers1[0]].min()
-      #print(Min)
-      return (headers1[0],Total, Mean, Max, Min)
+      x = 0
+      while x < 4:
+        print (headers1[x])
+        Total = iris_csv[headers1[x]].sum()
+        Mean = iris_csv[headers1[x]].mean()
+        Max = iris_csv[headers1[x]].max()
+        Min = iris_csv[headers1[x]].min()
+        x = x+1
+        print(f"Min: {Min}")
+        return (headers1[x],Total, Mean, Max, Min)
 
 for Class in unique_class:
         print (Class)
+        x = 0
         with open(FILENAME, 'a') as f: #'a' for append
-            headers1[0],Total, Mean, Max, Min = summary_data(Class)
+            headers1[x],Total, Mean, Max, Min = summary_data(Class)
             string1 = f.write(f"Iris Type : {Class}\n")
-            string1 = f.write(f"Attribute : {headers1[0]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
+            string1 = f.write(f"Attribute : {headers1[x]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
 # displaying the contents of the CSV file
 '''print(csvFile)
 print(csvFile.to_string())
