@@ -1,0 +1,12 @@
+Iris Type : Iris-setosa
+Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-virginica
+Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-setosa
+Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-virginica
+Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
