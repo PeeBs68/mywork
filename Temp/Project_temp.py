@@ -50,6 +50,8 @@ FILENAME = "analysis.txt"
 # reading the CSV file
 iris_csv = pd.read_csv('iris.data', sep= ",", header=None)
 headers =  ["Sepal L", "Sepal W", "Petal L", "Petal W", "Class"]
+headers1 = headers[0:4]
+print (headers1)
 iris_csv.columns = headers
 
 
@@ -66,19 +68,21 @@ unique_class = iris_csv.Class.unique()
 
 def summary_data(Class):
       #need to loop through each attribute here
-      Total = iris_csv['Sepal L'].sum()
-      Mean = iris_csv['Sepal L'].mean()
-      Max = iris_csv['Sepal L'].max()
-      Min = iris_csv['Sepal L'].min()
+      #use headers1 list
+      print (headers1[0])
+      Total = iris_csv[headers1[0]].sum()
+      Mean = iris_csv[headers1[0]].mean()
+      Max = iris_csv[headers1[0]].max()
+      Min = iris_csv[headers1[0]].min()
       #print(Min)
-      return (Total, Mean, Max, Min)
+      return (headers1[0],Total, Mean, Max, Min)
 
 for Class in unique_class:
         print (Class)
         with open(FILENAME, 'a') as f: #'a' for append
-            Total, Mean, Max, Min = summary_data(Class)
+            headers1[0],Total, Mean, Max, Min = summary_data(Class)
             string1 = f.write(f"Iris Type : {Class}\n")
-            string1 = f.write(f"Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
+            string1 = f.write(f"Attribute : {headers1[0]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
 # displaying the contents of the CSV file
 '''print(csvFile)
 print(csvFile.to_string())
