@@ -46,15 +46,31 @@ Attribute Information:
 
 
 import pandas as pd
+
 FILENAME = "analysis.txt" 
-# reading the CSV file
+
+#Write an into to the output file
+with open(FILENAME, 'a') as f:
+     for_header = f.write("This fle shows the output of the analysis performd on the iris data set\n\n")
+
+# reading the CSV file and add heades
 iris_csv = pd.read_csv('iris.data', sep= ",", header=None)
 headers =  ["Sepal L", "Sepal W", "Petal L", "Petal W", "Class"]
 headers1 = headers[0:4]
 print (headers1)
 iris_csv.columns = headers
 
+#create a function to gather summary stats on the data set and write to the output file
+def summary_stats():
+     num_rows = len(iris_csv)
+     num_cols = len(iris_csv.columns)
+     print (num_rows, num_cols)
+     with open(FILENAME, 'a') as f:
+          for_summary = f.write(f"The iris data set contains {num_rows} rows and {num_cols} columns of data to analyse\n\n")
 
+#call the summary_stats function
+summary_stats()
+     
 unique_class = iris_csv.Class.unique()
 #class1 = iris_csv.Class[0]
 #class2 = iris_csv.Class[1]
