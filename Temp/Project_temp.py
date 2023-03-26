@@ -59,6 +59,7 @@ with open(FILENAME, 'a') as f:
 iris_csv = pd.read_csv('iris.data', sep= ",", header=None)
 headers =  ["Sepal L", "Sepal W", "Petal L", "Petal W", "Class"]
 headers1 = headers[0:4]
+print (headers)
 print (headers1)
 iris_csv.columns = headers
 
@@ -105,6 +106,21 @@ for Class in unique_class:
             headers1[x],Total, Mean, Max, Min = summary_data(Class)
             string1 = f.write(f"Iris Type : {Class}\n")
             string1 = f.write(f"Attribute : {headers1[x]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
+
+#Testing - to be deleted
+for Class in unique_class:
+        print (Class)
+        x = 0
+        with open(FILENAME, 'a') as f: #'a' for append
+            headers1[x],Total, Mean, Max, Min = summary_data(Class)
+            print (headers1)
+            print(f"headers1-0: {headers1[0]}")
+            print(f"headers1-1: {headers1[1]}")
+            print(f"headers1-2: {headers1[2]}")
+            print(f"headers1-3: {headers1[3]}")
+            string1 = f.write(f"Iris Type : {Class}\n")
+            string1 = f.write(f"Attribute : {headers1[0]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
+            string1 = f.write(f"Attribute : {headers1[1]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
 
 #Histogram
 sepal_l = []
