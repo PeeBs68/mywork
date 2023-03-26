@@ -46,6 +46,8 @@ Attribute Information:
 
 
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 FILENAME = "analysis.txt" 
 
@@ -103,6 +105,17 @@ for Class in unique_class:
             headers1[x],Total, Mean, Max, Min = summary_data(Class)
             string1 = f.write(f"Iris Type : {Class}\n")
             string1 = f.write(f"Attribute : {headers1[x]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
+
+#Histogram
+sepal_l = []
+for x in iris_csv['Sepal L']:
+    sepal_l.append(x)
+sepal_l.sort()
+print (sepal_l)
+plt.hist(sepal_l)
+plt.show()
+
+
 # displaying the contents of the CSV file
 '''print(csvFile)
 print(csvFile.to_string())
