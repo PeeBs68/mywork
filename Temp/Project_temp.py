@@ -63,6 +63,18 @@ print (headers)
 print (headers1)
 iris_csv.columns = headers
 
+#Using describe() for summary stats and specifying what to show
+#https://www.statology.org/pandas-describe-only-mean-std/
+print("New Stuff")
+#qqq = iris_csv.describe()
+#print (qqq)
+www = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
+print (f"www = : {www}")
+       
+#To show summary stats using describe() for each Class - maybe call this for each iris type
+#with open(FILENAME, 'a') as f:
+#     for_header = f.write(str(iris_csv.groupby("Class").describe()))
+
 #create a function to gather summary stats on the data set and write to the output file
 def summary_stats():
      num_rows = len(iris_csv)
