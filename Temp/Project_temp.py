@@ -55,13 +55,15 @@ FILENAME = "analysis.txt"
 with open(FILENAME, 'a') as f:
      for_header = f.write("This fle shows the output of the analysis performd on the iris data set\n\n")
 
-# reading the CSV file and add heades
-iris_csv = pd.read_csv('iris.data', sep= ",", header=None)
-headers =  ["Sepal L", "Sepal W", "Petal L", "Petal W", "Class"]
-headers1 = headers[0:4]
-print (headers)
-print (headers1)
-iris_csv.columns = headers
+# reading the CSV file and add column names
+#From here - https://stackoverflow.com/questions/31645466/give-column-name-when-read-csv-file-pandas
+col_names =  ["Sepal Length", "Sepal Width", "Petal Length", "Petal Width", "Class"]
+iris_csv = pd.read_csv('iris.data', sep= ",", names=col_names, header=None)
+
+#print (headers1)
+
+#used later on
+headers1 = col_names[0:4]
 
 #Using describe() for summary stats and specifying what to show
 #https://www.statology.org/pandas-describe-only-mean-std/
@@ -136,7 +138,7 @@ for Class in unique_class:
 
 #Histogram
 sepal_l = []
-for x in iris_csv['Sepal L']:
+for x in iris_csv['Sepal Length']:
     sepal_l.append(x)
 sepal_l.sort()
 print (sepal_l)
