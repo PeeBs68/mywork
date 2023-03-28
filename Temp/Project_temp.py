@@ -147,20 +147,21 @@ plt.hist(sepal_l)
 plt.show()
 
 
-def plotting():
-     for x in headers1:
-          newlist = []
-#          x = []
-          print (f"x is equal to {x}")
-          for y in iris_csv[x]:
-              newlist.append(y)
-              print ("Hi")
-              print (newlist)
-#              return newlist
+def plotting(header):
+     for y in iris_csv[header]:
+#        print (iris_csv[header])
+        newlist.append(y)
+        print (newlist)
+#        print ("Hi")
+#        plt.hist(sepal_l)
+#        plt.show()
+        return newlist
 
-plotting()
-
-     
+newlist = []
+for header in headers1:
+#     newlist = []
+     header = plotting(header)
+#print (newlist)
 
 # displaying the contents of the CSV file
 '''print(csvFile)

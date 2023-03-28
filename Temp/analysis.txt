@@ -492,3 +492,364 @@ Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.05400000000
 Iris Type : Iris-virginica
 Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
 Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+This fle shows the output of the analysis performd on the iris data set
+
+The iris data set contains 150 rows and 5 columns of data to analyse
+
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 4.3, Max : 7.9, Sum : 876.5, Mean : 5.843333333333335
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-setosa
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-versicolor
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Iris Type : Iris-virginica
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
+Attribute : Sepal Width, Min : 2.0, Max : 4.4, Sum : 458.1, Mean : 3.0540000000000007
