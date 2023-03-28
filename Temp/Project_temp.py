@@ -137,14 +137,30 @@ for Class in unique_class:
             string1 = f.write(f"Attribute : {headers1[1]}, Min : {Min}, Max : {Max}, Sum : {Total}, Mean : {Mean}\n")
 
 #Histogram
-sepal_l = []
+sepal_l, sepal_w = [], []
 for x in iris_csv['Sepal Length']:
     sepal_l.append(x)
 sepal_l.sort()
 print (sepal_l)
+print (sepal_w)
 plt.hist(sepal_l)
 plt.show()
 
+
+def plotting():
+     for x in headers1:
+          newlist = []
+#          x = []
+          print (f"x is equal to {x}")
+          for y in iris_csv[x]:
+              newlist.append(y)
+              print ("Hi")
+              print (newlist)
+#              return newlist
+
+plotting()
+
+     
 
 # displaying the contents of the CSV file
 '''print(csvFile)
