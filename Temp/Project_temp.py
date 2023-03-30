@@ -163,6 +163,37 @@ for header in headers1:
      header = plotting(header)
 #print (newlist)
 
+#For some additional stats
+'''print ("Newest STuff")
+unique_class = iris_csv.Class.unique()
+print (unique_class)
+print (iris_csv.Class)
+#print (iris_csv.Class())
+for x in iris_csv.Class:
+#    print(iris_csv['Class'].min)
+    Min = unique_class.min()
+    print (Min)
+for x in csvFile['Sepal L']:
+    print(x)'''
+
+
+plt.clf()
+for x in iris_csv.Class:
+     plt.scatter(iris_csv['Sepal Length'], iris_csv['Sepal Width'])
+#plt.title('Sepal Length | Sepal Width')
+plt.xlabel('Sepal length [cm]')
+plt.ylabel('Sepal Width [cm]')
+plt.legend()
+#plt.show()
+#plt.savefig("Sepal Length | Sepal Width Scatterplot.png")
+#with open(FILENAME, 'a') as f:
+#     for_header = f.write("Scatter Plot saved as Sepal Length | Sepal Width Scatterplot.png\n")
+
+#plt.clf()
+    
+#plt.savefig("Petal Length | Petal Width Scatterplot.png")
+#with open(FILENAME, 'a') as f:
+#     for_header = f.write("Scatter Plot saved as Petal Length | Petal Width Scatterplot.png\n\n")
 # displaying the contents of the CSV file
 '''print(csvFile)
 print(csvFile.to_string())
