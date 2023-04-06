@@ -163,6 +163,49 @@ for header in headers1:
      header = plotting(header)
 #print (newlist)
 
+
+iris_setosa=iris_csv.loc[iris_csv["Class"]=="Iris-setosa"]
+iris_virginica=iris_csv.loc[iris_csv["Class"]=="Iris-virginica"]
+iris_versicolor=iris_csv.loc[iris_csv["Class"]=="Iris-versicolor"]
+
+print (iris_setosa)
+
+xxx= iris_setosa.describe().loc[['min', 'max', 'mean', 'std']]
+print (f"www = : {www}")
+
+ise_min = iris_setosa['Sepal Length'].min()
+print(f"Min : {ise_min}")
+
+unique_class = iris_csv.Class.unique()
+print (unique_class)
+
+def write_data():
+    xxx = iris_setosa.describe().loc[['min', 'max', 'mean', 'std']]
+    yyy = iris_versicolor.describe().loc[['min', 'max', 'mean', 'std']]
+    zzz = iris_virginica.describe().loc[['min', 'max', 'mean', 'std']]
+    print (unique_class[0])
+    print (xxx)
+    with open(FILENAME, 'a') as f:
+         string1 = f.write(str(Class))
+         string2 = f.write(str(xxx))
+    print (unique_class[1])
+    print (yyy)
+    with open(FILENAME, 'a') as f:
+         string1 = f.write(str(Class))
+         string2 = f.write(str(yyy))
+    print (unique_class[2])
+    print (zzz)
+    with open(FILENAME, 'a') as f:
+         string1 = f.write(str(Class))
+         string2 = f.write(str(zzz))
+
+         
+#         min = Class['Sepal Length'].min()
+#        with open(FILENAME, 'wt') as f:
+#            string1 = f.write(str(Class))
+
+write_data()
+
 #For some additional stats
 '''print ("Newest STuff")
 unique_class = iris_csv.Class.unique()
