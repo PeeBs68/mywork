@@ -23,17 +23,29 @@ def text_write(data):
          for_header = f.write(data)
 
 #Write an intro to the results file
-data = "This is a test\n\n"
+data = "This file shows the output of the analysis performed on the iris data set\n\n"
+#Call the write function
 text_write(data)
 
 #with open(FILENAME, 'a') as f:
 #     for_header = f.write("This file shows the output of the analysis performed on the iris data set\n\n")
 
 #Using describe() to show summary stats and specifying the attributes to display
-summary_stats = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
-with open(FILENAME, 'a') as f: #'a' for append
-            summary_stats = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
-            string1 = f.write(f"Summary of dataset : \n{summary_stats}\n")
+#summary_stats = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
+#with open(FILENAME, 'a') as f: #'a' for append
+#            print (summary_stats)
+#            summary_stats = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
+#            string1 = f.write(f"Summary of dataset : \n{summary_stats}\n")
+data = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
+data = data.to_string(header=headers1, index=True)
+#https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
+#https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_string.html
+
+#data = (f"Summary of Stats: \n {data}")
+
+#Call the write function
+text_write(f"Summary of Stats: \n {data}")
+
 
 #Create individual variables containing data for each flower types
 iris_setosa=iris_csv.loc[iris_csv["Class"]=="Iris-setosa"]
@@ -49,7 +61,7 @@ def individual_stats():
     versicolor_stats = iris_versicolor.describe().loc[['min', 'max', 'mean', 'std']]
     virginica_stats = iris_virginica.describe().loc[['min', 'max', 'mean', 'std']]
     with open(FILENAME, 'a') as f:
-         string1 = f.write(f"\nSummary Data for {unique_class[0]}\n")
+         string1 = f.write(f"\n\nSummary Data for {unique_class[0]}\n")
          summary1 = f.write(str(setosa_stats))
          string1 = f.write(f"\n\nSummary Data for {unique_class[1]}\n")
          summary2 = f.write(str(versicolor_stats))
