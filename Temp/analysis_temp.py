@@ -63,16 +63,23 @@ while x < 3:
 #print (unique_class[0])
 
 #For other plotting
-#https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
-
 import seaborn as sns
 
-plt.clf()
+#https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+'''plt.clf()
 plot = sns.FacetGrid(iris_csv, hue="Class")
 plot.map(sns.histplot, "Sepal Length").add_legend()
 plot = sns.FacetGrid(iris_csv, hue="Class")
 plot.map(sns.histplot, "Sepal Width").add_legend()
+plt.show()'''
+
+#https://practicaldatascience.co.uk/data-science/how-to-calculate-pearson-correlation-in-pandas
+#https://blog.quantinsti.com/creating-heatmap-using-python-seaborn/
+#https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+
+sns.heatmap(iris_csv.corr(method='pearson'), cmap="YlGnBu", annot=True); 
 plt.show()
+plt.savefig("Heatmap.png")
 
 #Function to gather and print individual stats for each flower type to the output file
 '''def individual_stats():
