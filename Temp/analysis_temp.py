@@ -62,6 +62,18 @@ while x < 3:
      x=x+1
 #print (unique_class[0])
 
+#For other plotting
+#https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+
+import seaborn as sns
+
+plt.clf()
+plot = sns.FacetGrid(iris_csv, hue="Class")
+plot.map(sns.histplot, "Sepal Length").add_legend()
+plot = sns.FacetGrid(iris_csv, hue="Class")
+plot.map(sns.histplot, "Sepal Width").add_legend()
+plt.show()
+
 #Function to gather and print individual stats for each flower type to the output file
 '''def individual_stats():
     setosa_stats = iris_setosa.describe().loc[['min', 'max', 'mean', 'std']]
