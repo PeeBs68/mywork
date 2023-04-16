@@ -78,7 +78,7 @@ plt.show()'''
 #https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 
 sns.heatmap(iris_csv.corr(method='pearson'), cmap="YlGnBu", annot=True); 
-plt.show()
+#plt.show()
 plt.savefig("Heatmap.png")
 
 #Function to gather and print individual stats for each flower type to the output file
