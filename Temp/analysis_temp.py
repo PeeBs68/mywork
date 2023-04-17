@@ -1,4 +1,4 @@
-# analysis.py
+# analysis_temp.py
 # Author: Phelim Barry
 # Purpose: For analysis of iris data set
 
@@ -65,6 +65,7 @@ while x < 3:
 #For other plotting
 import seaborn as sns
 
+#Use This
 #https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 '''plt.clf()
 plot = sns.FacetGrid(iris_csv, hue="Class")
@@ -77,6 +78,10 @@ plt.show()'''
 #https://blog.quantinsti.com/creating-heatmap-using-python-seaborn/
 #https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 
+#And This
+#drop the Class column or else you'll get a float error
+#https://stackoverflow.com/questions/8420143/valueerror-could-not-convert-string-to-float-id
+iris_csv = iris_csv.drop("Class", axis=1)
 sns.heatmap(iris_csv.corr(method='pearson'), cmap="YlGnBu", annot=True); 
 #plt.show()
 plt.savefig("Heatmap.png")
@@ -103,6 +108,7 @@ with open(FILENAME, 'a') as f:
      string0 = f.write("\n\nThe following plots are created and stored in this same directory\n")
 
 #Create a list just for Sepal Length 
+plt.clf()
 sepal_l = []
 for x in iris_csv['Sepal Length']:
     sepal_l.append(x)
@@ -203,3 +209,4 @@ loop/function maybe rather than 4 blocks of identical code)
 
 2 Clean up the output to the txt file for the plots so it reads better
 '''
+print (f"Summary data has been written to {FILENAME}")
