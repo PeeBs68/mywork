@@ -67,12 +67,16 @@ import seaborn as sns
 
 #Use This
 #https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
-'''plt.clf()
+plt.clf()
 plot = sns.FacetGrid(iris_csv, hue="Class")
 plot.map(sns.histplot, "Sepal Length").add_legend()
+plt.title("Sepal Length combined")
+plt.savefig("Test.png")
 plot = sns.FacetGrid(iris_csv, hue="Class")
 plot.map(sns.histplot, "Sepal Width").add_legend()
-plt.show()'''
+plt.title("Sepal Width combined")
+#plt.show()
+plt.savefig("Test1.png")
 
 #https://practicaldatascience.co.uk/data-science/how-to-calculate-pearson-correlation-in-pandas
 #https://blog.quantinsti.com/creating-heatmap-using-python-seaborn/
