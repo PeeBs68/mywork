@@ -50,7 +50,8 @@ data = data.to_string(header=headers1, index=True)
 
 #Call the write function
 text_write(f"Summary of Dataset: \n {data}\n\n")
-
+output_data = (f"Writing summary for the combined data set to {FILENAME}")
+outputs.append(output_data)
 
 #Create individual variables containing data for each flower types
 iris_setosa=iris_csv.loc[iris_csv["Class"]=="Iris-setosa"]
@@ -63,11 +64,14 @@ x=0
 while x < 3:
      data = iris_csv.loc[iris_csv["Class"]==unique_class[x]]
      data = data.describe().loc[['min', 'max', 'mean', 'std']]
-     output_data = (f"Writing summary data for {unique_class[x]}")
+     output_data = (f"Writing summary data for {unique_class[x]} to {FILENAME}")
      outputs.append(output_data)
      text_write(f"Summary Data for {unique_class[x]}: \n {data}\n\n")
      x=x+1
 #print (unique_class[0])
+
+output_data = (f"Generating plots and saving to local directory and writing plot names to {FILENAME}")
+outputs.append(output_data)
 
 #For other plotting
 import seaborn as sns
