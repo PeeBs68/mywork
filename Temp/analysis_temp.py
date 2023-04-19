@@ -11,6 +11,9 @@ import matplotlib.pyplot as plt
 col_names =  ["Sepal Length", "Sepal Width", "Petal Length", "Petal Width", "Class"]
 iris_csv = pd.read_csv('iris.data', sep= ",", names=col_names, header=None)
 
+#create a list to hold ouput details for ptinting back to the console upon completion
+outputs = []
+
 #used later
 headers1 = col_names[0:4]
 
@@ -26,6 +29,8 @@ def text_write(data):
 data = "This file shows the output of the analysis performed on the iris data set\n\n"
 #Call the write function
 text_write(data)
+output_data = (f"Created {FILENAME} to show summary data")
+outputs.append(output_data)
 
 #with open(FILENAME, 'a') as f:
 #     for_header = f.write("This file shows the output of the analysis performed on the iris data set\n\n")
@@ -58,6 +63,8 @@ x=0
 while x < 3:
      data = iris_csv.loc[iris_csv["Class"]==unique_class[x]]
      data = data.describe().loc[['min', 'max', 'mean', 'std']]
+     output_data = (f"Writing summary data for {unique_class[x]}")
+     outputs.append(output_data)
      text_write(f"Summary Data for {unique_class[x]}: \n {data}\n\n")
      x=x+1
 #print (unique_class[0])
@@ -213,4 +220,10 @@ loop/function maybe rather than 4 blocks of identical code)
 
 2 Clean up the output to the txt file for the plots so it reads better
 '''
-print (f"Summary data has been written to {FILENAME}")
+#print (f"Summary data has been written to {FILENAME}")
+
+output_data = (f"Finished writing to {FILENAME}")
+outputs.append(output_data)
+
+for output in outputs:
+     print (output)
