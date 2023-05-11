@@ -1,4 +1,4 @@
-# analysis_temp.py
+# analysis.py
 # Author: Phelim Barry
 # Purpose: For analysis of iris data set
 
@@ -6,228 +6,239 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # reading the CSV file and add column names
+# Information on how to add column names during the import taken from https://stackoverflow.com/questions/31645466/give-column-name-when-read-csv-file-pandas
 col_names =  ["Sepal Length", "Sepal Width", "Petal Length", "Petal Width", "Class"]
 iris_csv = pd.read_csv('iris.data', sep= ",", names=col_names, header=None)
 
-#create a list to hold ouput details for ptinting back to the console upon completion
-outputs = []
+#Create a list of header names used for the describe function below
+#headers1 = col_names[0:4]
 
-#used later
-headers1 = col_names[0:4]
+#create a list to hold output details for printing back to the console upon completion of the script
+outputs = []
 
 #Create the file to store the results
 FILENAME = "analysis.txt"
 
-#New Function for writing data to the text file
+#Function for writing data to the text file
 def text_write(data):
      with open(FILENAME, 'a') as f:
-         for_header = f.write(data)
+         data_to_write = f.write(data)
 
 #Write an intro to the results file
 data = "This file shows the output of the analysis performed on the iris data set\n\n"
-#Call the write function
+#Call the text_write function to write the data to the text file
 text_write(data)
-output_data = (f"Created {FILENAME} to show summary data")
+
+#Append the current completed action to the outputs list for printing upon script completion
+output_data = (f"Created {FILENAME} to show summary data for the iris data set")
 outputs.append(output_data)
 
-#with open(FILENAME, 'a') as f:
-#     for_header = f.write("This file shows the output of the analysis performed on the iris data set\n\n")
+
+#Generate some basic information on the data set and write them to the text file
+#Rows and Columns
+data = iris_csv.shape
+text_write(f"The number of Rows, Columns in the data set are: {data}\n\n")
+
+#Column Names and Data Types
+#Information on how to supress terminal printing taken from https://stackoverflow.com/questions/39440253/how-to-return-a-string-from-pandas-dataframe-info
+import io
+buf = io.StringIO()
+iris_csv.info(buf=buf)
+data = buf.getvalue()
+text_write(f"The column names and data types in the data set are: \n\n {data}\n\n")
+
 
 #Using describe() to show summary stats and specifying the attributes to display
-#summary_stats = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
-#with open(FILENAME, 'a') as f: #'a' for append
-#            print (summary_stats)
-#            summary_stats = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
-#            string1 = f.write(f"Summary of dataset : \n{summary_stats}\n")
+#Information on how to limit what the describe function displays taken from https://www.statology.org/pandas-describe-only-mean-std/ 
 data = iris_csv.describe().loc[['min', 'max', 'mean', 'std']]
-data = data.to_string(header=headers1, index=True)
-#https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
-#https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_string.html
-
-#data = (f"Summary of Stats: \n {data}")
-
-#Call the write function
+#Convert the data to a str in order to be able to export it
+#Information on converting a dataframe to a string taken from https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file 
+data = data.to_string(header=col_names[0:4], index=True)
+#Call the text_write function to write the data to the text file
 text_write(f"Summary of Dataset: \n {data}\n\n")
+#Append the current completed action to the outputs list for printing upon script completion
 output_data = (f"Writing summary for the combined data set to {FILENAME}")
 outputs.append(output_data)
 
-#Create individual variables containing data for each flower types
-iris_setosa=iris_csv.loc[iris_csv["Class"]=="Iris-setosa"]
-iris_virginica=iris_csv.loc[iris_csv["Class"]=="Iris-virginica"]
-iris_versicolor=iris_csv.loc[iris_csv["Class"]=="Iris-versicolor"]
+#Create a variable to store the unique classes of iris
+#unique_class = iris_csv.Class.unique()
 
+#Code to gather and print individual stats for each flower type to the output file
+output_data = (f"Writing summary data for each flower type to {FILENAME}")
+outputs.append(output_data)
 #Create a variable to store the unique classes of iris
 unique_class = iris_csv.Class.unique()
-x=0
-while x < 3:
-     data = iris_csv.loc[iris_csv["Class"]==unique_class[x]]
+flower=0
+while flower < 3:
+     data = iris_csv.loc[iris_csv["Class"]==unique_class[flower]]
      data = data.describe().loc[['min', 'max', 'mean', 'std']]
-     output_data = (f"Writing summary data for {unique_class[x]} to {FILENAME}")
-     outputs.append(output_data)
-     text_write(f"Summary Data for {unique_class[x]}: \n {data}\n\n")
-     x=x+1
-#print (unique_class[0])
+     text_write(f"Summary Data for {unique_class[flower]}: \n {data}\n\n")
+     flower=flower+1
 
+#Histogram Code
+data = "The following plots are created and stored in this same directory"
+text_write(data)
+#Append the current completed action to the outputs list for printing upon script completion
 output_data = (f"Generating plots and saving to local directory and writing plot names to {FILENAME}")
 outputs.append(output_data)
 
-#For other plotting
-import seaborn as sns
-
-#Use This
-#https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
-plt.clf()
-plot = sns.FacetGrid(iris_csv, hue="Class")
-plot.map(sns.histplot, "Sepal Length").add_legend()
-plt.title("Sepal Length combined")
-plt.savefig("Test.png")
-plot = sns.FacetGrid(iris_csv, hue="Class")
-plot.map(sns.histplot, "Sepal Width").add_legend()
-plt.title("Sepal Width combined")
-#plt.show()
-plt.savefig("Test1.png")
-
-#https://practicaldatascience.co.uk/data-science/how-to-calculate-pearson-correlation-in-pandas
-#https://blog.quantinsti.com/creating-heatmap-using-python-seaborn/
-#https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
-
-#And This
-#drop the Class column or else you'll get a float error
-#https://stackoverflow.com/questions/8420143/valueerror-could-not-convert-string-to-float-id
-iris_csv = iris_csv.drop("Class", axis=1)
-sns.heatmap(iris_csv.corr(method='pearson'), cmap="YlGnBu", annot=True); 
-#plt.show()
-plt.savefig("Heatmap.png")
-
-#Function to gather and print individual stats for each flower type to the output file
-'''def individual_stats():
-    setosa_stats = iris_setosa.describe().loc[['min', 'max', 'mean', 'std']]
-    versicolor_stats = iris_versicolor.describe().loc[['min', 'max', 'mean', 'std']]
-    virginica_stats = iris_virginica.describe().loc[['min', 'max', 'mean', 'std']]
-    with open(FILENAME, 'a') as f:
-         string1 = f.write(f"\n\nSummary Data for {unique_class[0]}\n")
-         summary1 = f.write(str(setosa_stats))
-         string1 = f.write(f"\n\nSummary Data for {unique_class[1]}\n")
-         summary2 = f.write(str(versicolor_stats))
-         string1 = f.write(f"\n\nSummary Data for {unique_class[2]}\n")
-         summary3 = f.write(str(virginica_stats))
-
-#Call the individual_stats function - (maybe can be cleaned up to reduce code later)
-individual_stats()'''
-
-#Histogram Code - (need to add this to a function/loop later to loop through each variable rather than having 4 sets of very like code)
-#Add a few blank lies for presentation purposes
-with open(FILENAME, 'a') as f:
-     string0 = f.write("\n\nThe following plots are created and stored in this same directory\n")
-
-#Create a list just for Sepal Length 
-plt.clf()
+#Create a list just for Sepal Length and generate a histogram
 sepal_l = []
-for x in iris_csv['Sepal Length']:
-    sepal_l.append(x)
+for iris in iris_csv['Sepal Length']:
+    sepal_l.append(iris)
+#Sort the lsit before creating the histogram
 sepal_l.sort()
+#Add title and labels
 plt.title("Sepal Length")
-plt.xlabel("Length")
+plt.xlabel("Length (cm)")
 plt.ylabel("Frequency")
 plt.hist(sepal_l)
+#Save the file
 plt.savefig("Sepal_Length_Histogram.png")
-with open(FILENAME, 'a') as f:
-     for_header = f.write("\nSepal_Length_Histogram.png saved showing a plot of Sepal Lengths")
+#Wtite to the text file
+data = "\n\tSepal_Length_Histogram.png"
+text_write(data)
 
-#Create a list just for Sepal Width 
+#Create a list just for Sepal Width and generate a histogram
+#Clear the previous plot
 plt.clf()
 sepal_w = []
-for x in iris_csv['Sepal Width']:
-    sepal_w.append(x)
+for iris in iris_csv['Sepal Width']:
+    sepal_w.append(iris)
 sepal_w.sort()
 plt.title("Sepal Width")
-plt.xlabel("Width")
+plt.xlabel("Width (cm)")
 plt.ylabel("Frequency")
 plt.hist(sepal_w)
 plt.savefig("Sepal_Width_Histogram.png")
-with open(FILENAME, 'a') as f:
-     for_header = f.write("\nSepal_Width_Histogram.png saved showing a plot of Sepal Widths")
+#Wtite to the text file
+data = "\n\tSepal_Width_Histogram.png"
+text_write(data)
 
-#Create a list just for Petal Length
+#Create a list just for Petal Length and generate a histogram
 plt.clf()
 petal_l = []
-for x in iris_csv['Petal Length']:
-    petal_l.append(x)
+for iris in iris_csv['Petal Length']:
+    petal_l.append(iris)
 petal_l.sort()
 plt.title("Petal Length")
-plt.xlabel("Length")
+plt.xlabel("Length (cm)")
 plt.ylabel("Frequency")
 plt.hist(petal_l)
 plt.savefig("Petal_Length_Histogram.png")
-with open(FILENAME, 'a') as f:
-     for_header = f.write("\nPetal_Length_Histogram.png saved showing a plot of Petal Lengths")
+#Wtite to the text file
+data = "\n\tPetal_Length_Histogram.png"
+text_write(data)
 
-#Create a list just for Petal Width 
+#Create a list just for Petal Width and generate a histogram
 plt.clf()
 petal_w = []
-for x in iris_csv['Petal Width']:
-    petal_w.append(x)
+for iris in iris_csv['Petal Width']:
+    petal_w.append(iris)
 petal_w.sort()
 plt.title("Petal Width")
-plt.xlabel("Width")
+plt.xlabel("Width (cm)")
 plt.ylabel("Frequency")
 plt.hist(petal_w)
 plt.savefig("Petal_Width_Histogram.png")
-with open(FILENAME, 'a') as f:
-     for_header = f.write("\nPetal_Width_Histogram.png saved showing a plot of Sepal Lengths")
+#Wtite to the text file
+data = "\n\tPetal_Width_Histogram.png"
+text_write(data)
 
-#For the scatter plot for Sepal Width and Sepal Length
+#Create a scatter plot to compare Sepal Width and Sepal Length
 plt.clf()
 plt.scatter(iris_csv['Sepal Length'], iris_csv['Sepal Width'], label='Sepal Length | Sepal Width\n')
 plt.title('Sepal Length | Sepal Width')
-plt.xlabel('Sepal length [cm]')
-plt.ylabel('Sepal Width [cm]')
+plt.xlabel('Sepal length (cm)')
+plt.ylabel('Sepal Width (cm)')
 plt.legend()
-plt.savefig("Sepal_Length | Sepal_Width Scatterplot.png")
-with open(FILENAME, 'a') as f:
-     for_header = f.write("\nSepal_Length | Sepal_Width Scatterplot.png saved showing a plot of Sepal Lengths and Sepal Widths\n")
+plt.savefig("Sepal_Length_Sepal_Width_Scatterplot.png")
+#Wtite to the text file
+data = "\n\tSepal_Length_Sepal_Width_Scatterplot.png"
+text_write(data)
 
-#For the scatter plot for Petal Width and Petal Length
+#For the scatter plot to compare Petal Width and Petal Length
 plt.clf()
 plt.scatter(iris_csv['Petal Length'], iris_csv['Petal Width'], label='Petal Length | Petal Width\n')
 plt.title('Petal Length | Petal Width')
-plt.xlabel('Petal length [cm]')
-plt.ylabel('Petal Width [cm]')
+plt.xlabel('Petal length (cm)')
+plt.ylabel('Petal Width (cm)')
 plt.legend()
-#plt.show()
-plt.savefig("Petal Length | Petal Width Scatterplot.png")
-with open(FILENAME, 'a') as f:
-     for_header = f.write("Petal Length | Petal Width Scatterplot.png saved showing a plot of Petal Lengths and Petal Widths\n")
+plt.savefig("Petal_Length_Petal_Width_Scatterplot.png")
+#Wtite to the text file
+data = "\n\tPetal_Length_Petal_Width_Scatterplot.png"
+text_write(data)
 
-#To split out each flower type into seperate variables and print a sample plot
+#Split out each flower type into seperate variables and print a sample histogram plot with 3 data elements
+iris_setosa=iris_csv.loc[iris_csv["Class"]=="Iris-setosa"]
+iris_virginica=iris_csv.loc[iris_csv["Class"]=="Iris-virginica"]
+iris_versicolor=iris_csv.loc[iris_csv["Class"]=="Iris-versicolor"]
 plt.clf()
 iris_setosa.sort_values("Petal Length")
 iris_virginica.sort_values("Petal Length")
 iris_versicolor.sort_values("Petal Length")
 plt.title("Petal Length Comparison")
-plt.xlabel("Length")
+plt.xlabel("Length (cm)")
 plt.ylabel("Frequency")
 plt.hist(iris_setosa["Petal Length"],label='iris_setosa')
 plt.hist(iris_virginica["Petal Length"],label='iris_virginica')
 plt.hist(iris_versicolor["Petal Length"],label='iris_versicolor')
 plt.legend()
-plt.savefig("Petal_Length_Comparison.png")
-with open(FILENAME, 'a') as f:
-     for_header = f.write("Petal_Length_Comparison.png saved showing a plot comparing Petal Lengths for all three flower types\n\n")
+plt.savefig("Petal_Length_Comparison_Histogram.png")
+#Wtite to the text file
+data = "\n\tPetal_Length_Comparison_Histogram.png"
+text_write(data)
 
+#Plotting a Heatmap using seaborn to show correlation with inspiration taken from the following sources:
+#https://practicaldatascience.co.uk/data-science/how-to-calculate-pearson-correlation-in-pandas
+#https://blog.quantinsti.com/creating-heatmap-using-python-seaborn/
+#https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+plt.clf()
+#Inspiration on how to drop the Class column to avoid a float error taken from https://stackoverflow.com/questions/8420143/valueerror-could-not-convert-string-to-float-id
+iris_csv_sns = iris_csv.drop("Class", axis=1)
+sns.heatmap(iris_csv_sns.corr(method='pearson'), cmap="YlGnBu", annot=True); 
+plt.title("Heatmap - Pearsons Correllation")
+plt.savefig("Correlation_Heatmap.png")
+#Wtite to the text file
+data = "\n\tCorrelation_Heatmap.png\n\n"
+text_write(data)
 
-'''Things to do
-1 Look into using a list/dict for the plot attributes (titles, labels etc and could use a 
-loop/function maybe rather than 4 blocks of identical code)
+#Correlation Table
+#Inspiration on using the inbuilt corr() to generate Pearson's correlation table taken from https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+p_corr = iris_csv.corr(method='pearson')
+#Convert dataframe to string 
+data = p_corr.to_string()
+text_write(f"Pearson's Correlation of Dataset: \n {data}\n\n")
+#Append the current completed action to the outputs list for printing upon script completion
+output_data = (f"Writing Person's Correlation data to {FILENAME}")
+outputs.append(output_data)
 
-2 Clean up the output to the txt file for the plots so it reads better
-'''
-#print (f"Summary data has been written to {FILENAME}")
-
+#Append the current completed action to the outputs list for printing upon script completion
 output_data = (f"Finished writing to {FILENAME}")
 outputs.append(output_data)
 
+#Print the output list which informs the user what the script has done
 for output in outputs:
      print (output)
+
+plt.clf()
+x_axis = iris_csv['Petal Length']
+y_axis = iris_csv['Petal Width']
+plt.title("Petal length vs petal width")
+sns.scatterplot(x=x_axis, y=y_axis, hue=iris_csv.Class, s=90)
+plt.savefig("testing.png")
+data = "\n\tScatterPlot v1.png\n\n"
+text_write(data)
+
+plt.clf()
+x_axis = iris_csv['Sepal Length']
+y_axis = iris_csv['Sepal Width']
+plt.title("Sepal length vs Sepal width")
+sns.scatterplot(x=x_axis, y=y_axis, hue=iris_csv.Class, s=90)
+plt.savefig("testing2.png")
+data = "\n\tScatterPlot v2.png\n\n"
+text_write(data)
+#https://codesolid.com/matplotlib-vs-seaborn/#aioseo-scatter---matplotlib-vs-seaborn
