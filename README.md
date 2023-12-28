@@ -1,36 +1,33 @@
-# mywork
+Readme for Project2 in Programming for Data Analysis
 
-My Work area
+Author: Phelim Barry
 
-Input:
-```python
-for i in list:
-    print(i)
-```
-Output:
-```
-The total in Euros and Cents is: €23.54
-```
+The contents of this repository are available at https://github.com/PeeBs68/prog_da_project2
 
-Mermaid:
-https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/
+To execute the code the following applications are suggested:   
+Anaconda Navigator v2.4.2   
+Python v3.11.4   
+VS Code: v1.82.2   
+Jupyter Notebook: v6.5.4
 
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+# Table of Contents
 
-```mermaid
-flowchart TD;
-    A[Enter a number] --> B{number == 1?};
-    B -- No --> C{Even?};
-    B -- Yes ----> G[End];
-    C -- Yes --> D[divide by 2];
-    D --> B;
-    C -- No --> E[multiple by 3 and add 1];
-    E --> B;
-```
+1. [Introduction](#Introduction)
+2. [Requirements](#Requirements)
+etc...
+
+
+### Introduction
+An analysis of paleo to present climate focusing on areas such as CO2 levels, temperature anomolies and methane levesls etc...
+
+### Requirements
+
+### CO2 and Temp Analysis
+In this section we look at the relationship netween CO2 levels and Temperature Anomolies for a date range bwtween 800000BC and present...
+
+### Methane Levels Analysis
+
+### Section3
+
+### References/Appendix etc
