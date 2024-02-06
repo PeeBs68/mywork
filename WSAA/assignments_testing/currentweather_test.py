@@ -33,13 +33,13 @@ current_temp = data["current"]["temperature_2m"]
 
 # Just to add a bit more detail
 if current_wdir < 90:
-    wdir = "Easterly"
+    wdir = "North/Easterly"
 elif current_wdir < 180:
-    wdir = "Southerly"
+    wdir = "South/Easterly"
 elif current_wdir < 279:
-    wdir = "Westerly"
+    wdir = "West/Southerly"
 else:
-    wdir = "Northerly"
+    wdir = "North/Westerly"
 
-print(f"Right now at Kinsale Golf Club the temperature is {current_temp} degrees celcius and the wind direction is {current_wdir} degrees which is roughly {wdir}")
+print(f"Right now at Kinsale Golf Club the temperature is {current_temp} degrees celcius and the wind is blowing in the direction of {current_wdir} degrees (which is roughly {wdir})")
 # https://open-meteo.com/en/docs/#current=wind_direction_10m&hourly=wind_direction_10m
