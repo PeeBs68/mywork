@@ -25,9 +25,21 @@ current_ws = data["current"]["wind_speed_10m"]
 print(f"The current wind speed at Kinsale Golf Club is {current_ws} kph.")
 '''
 
-url = "https://api.open-meteo.com/v1/forecast?latitude=53.82&longitude=-9.5&current=temperature_2m&current=wind_speed_10m"
+url = "https://api.open-meteo.com/v1/forecast?latitude=53.82&longitude=-9.5&current=temperature_2m&current=wind_direction_10m"
 response = requests.get(url)
 data = response.json()
-current_ws = data["current"]["wind_speed_10m"]
+current_wdir = data["current"]["wind_direction_10m"]
 current_temp = data["current"]["temperature_2m"]
-print(f"Right now at Kinsale Golf Club the temperature is {current_temp} degrees celcius and the wind speed is {current_ws} kph.")
+
+# Just to add a bit more detail
+if current_wdir < 90:
+    wdir = "Easterly"
+elif current_wdir < 180:
+    wdir = "Southerly"
+elif current_wdir < 279:
+    wdir = "Westerly"
+else:
+    wdir = "Northerly"
+
+print(f"Right now at Kinsale Golf Club the temperature is {current_temp} degrees celcius and the wind direction is {current_wdir} degrees which is roughly {wdir}")
+# https://open-meteo.com/en/docs/#current=wind_direction_10m&hourly=wind_direction_10m
