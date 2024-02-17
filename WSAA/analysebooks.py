@@ -7,6 +7,6 @@ count = 0
 for book in books:
     total += book["Price"]
     count += 1
-print(count)
-#print ("Average = ", total/count)
+#print(count)
+print ("Average Price of all books = ", total/count)
 #print(books)
