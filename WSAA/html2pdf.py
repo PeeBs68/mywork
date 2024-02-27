@@ -6,7 +6,7 @@ targetUrl = "https://en.wikipedia.org"
 #targetUrl = "https://www.atu.ie/"
 
 apikey = cfg["html2pdfkey"]
-#apikey = "Tsxnu5BVqAtLeB9DI6FPbeKSjwFeUqEWIRS7IlPMT04d96RrkVfuDUS7O0nPvavd"
+
 apiurl = 'https://api.html2pdf.app/v1/generate'
 
 params = {'html': targetUrl,'apiKey': apikey}

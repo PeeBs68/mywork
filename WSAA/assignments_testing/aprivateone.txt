@@ -1,0 +1,608 @@
+{
+    "payload": {
+        "allShortcutsEnabled": false,
+        "fileTree": {
+            "WSAA/assignments_testing": {
+                "items": [
+                    {
+                        "name": "assignment03-cso.py",
+                        "path": "WSAA/assignments_testing/assignment03-cso.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "assignment04.py",
+                        "path": "WSAA/assignments_testing/assignment04.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "cso.json",
+                        "path": "WSAA/assignments_testing/cso.json",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "currentweather_test.py",
+                        "path": "WSAA/assignments_testing/currentweather_test.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "json_dump.json",
+                        "path": "WSAA/assignments_testing/json_dump.json",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "temp.txt",
+                        "path": "WSAA/assignments_testing/temp.txt",
+                        "contentType": "file"
+                    }
+                ],
+                "totalCount": 6
+            },
+            "WSAA": {
+                "items": [
+                    {
+                        "name": "assignments_testing",
+                        "path": "WSAA/assignments_testing",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": ".DS_Store",
+                        "path": "WSAA/.DS_Store",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "analysebooks.py",
+                        "path": "WSAA/analysebooks.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "analysehair.py",
+                        "path": "WSAA/analysehair.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "aprivateone.txt",
+                        "path": "WSAA/aprivateone.txt",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "book_average.py",
+                        "path": "WSAA/book_average.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "bookapidao.py",
+                        "path": "WSAA/bookapidao.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "caodao.py",
+                        "path": "WSAA/caodao.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "document.pdf",
+                        "path": "WSAA/document.pdf",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "html2pdf.py",
+                        "path": "WSAA/html2pdf.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "lab02.py",
+                        "path": "WSAA/lab02.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "lab03.py",
+                        "path": "WSAA/lab03.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "lab05.py",
+                        "path": "WSAA/lab05.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "latitudes.csv",
+                        "path": "WSAA/latitudes.csv",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "trainxml.xml",
+                        "path": "WSAA/trainxml.xml",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "valoff.json",
+                        "path": "WSAA/valoff.json",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "valoffdao.py",
+                        "path": "WSAA/valoffdao.py",
+                        "contentType": "file"
+                    }
+                ],
+                "totalCount": 17
+            },
+            "": {
+                "items": [
+                    {
+                        "name": "Lab01",
+                        "path": "Lab01",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Lab02",
+                        "path": "Lab02",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Lab03",
+                        "path": "Lab03",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Lab04",
+                        "path": "Lab04",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Lab05",
+                        "path": "Lab05",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Lab06",
+                        "path": "Lab06",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Lab07",
+                        "path": "Lab07",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Lab08",
+                        "path": "Lab08",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "Temp",
+                        "path": "Temp",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "WSAA",
+                        "path": "WSAA",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "data",
+                        "path": "data",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "db_folder",
+                        "path": "db_folder",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "exports",
+                        "path": "exports",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "img",
+                        "path": "img",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": "source_data",
+                        "path": "source_data",
+                        "contentType": "directory"
+                    },
+                    {
+                        "name": ".DS_Store",
+                        "path": ".DS_Store",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": ".gitignore",
+                        "path": ".gitignore",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "AgeGuessingGame.py",
+                        "path": "AgeGuessingGame.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "README.md",
+                        "path": "README.md",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "README_temp.md",
+                        "path": "README_temp.md",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "ValueError.py",
+                        "path": "ValueError.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "accounts_temp.py",
+                        "path": "accounts_temp.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "add_image.ipynb",
+                        "path": "add_image.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "addone.py",
+                        "path": "addone.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "co2-mm-mlo_csv.csv",
+                        "path": "co2-mm-mlo_csv.csv",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "collatz_temp.ipynb",
+                        "path": "collatz_temp.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "collatz_temp.py",
+                        "path": "collatz_temp.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "csv_text.csv",
+                        "path": "csv_text.csv",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "division.ipynb",
+                        "path": "division.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "division.py",
+                        "path": "division.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "function.py",
+                        "path": "function.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "fund_da_week3and4.ipynb",
+                        "path": "fund_da_week3and4.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "fund_da_week5and6.ipynb",
+                        "path": "fund_da_week5and6.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "fund_da_week7and8.ipynb",
+                        "path": "fund_da_week7and8.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "fund_da_week9and10.ipynb",
+                        "path": "fund_da_week9and10.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "fund_da_week9and10_cont.ipynb",
+                        "path": "fund_da_week9and10_cont.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "inputs.py",
+                        "path": "inputs.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "json_text.txt",
+                        "path": "json_text.txt",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "lists.py",
+                        "path": "lists.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "loop_temp.py",
+                        "path": "loop_temp.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "loops.py",
+                        "path": "loops.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "mynotebook.ipynb",
+                        "path": "mynotebook.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "nameandage.py",
+                        "path": "nameandage.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "notebook_temp.ipynb",
+                        "path": "notebook_temp.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "number_types.ipynb",
+                        "path": "number_types.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "numpy_random_numbers.ipynb",
+                        "path": "numpy_random_numbers.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "penguins_temp.ipynb",
+                        "path": "penguins_temp.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "plotting_bar_charts.ipynb",
+                        "path": "plotting_bar_charts.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "plotting_histograms.ipynb",
+                        "path": "plotting_histograms.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "plotting_normal_dist.ipynb",
+                        "path": "plotting_normal_dist.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "prob_dens_funct.ipynb",
+                        "path": "prob_dens_funct.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "prog_da_week5.ipynb",
+                        "path": "prog_da_week5.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "prog_da_week6.ipynb",
+                        "path": "prog_da_week6.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "prog_da_week7.ipynb",
+                        "path": "prog_da_week7.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "prog_da_week8.ipynb",
+                        "path": "prog_da_week8.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "project1.ipynb",
+                        "path": "project1.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "project2.ipynb",
+                        "path": "project2.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "python_numbers.py",
+                        "path": "python_numbers.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "python_random_numbers.ipynb",
+                        "path": "python_random_numbers.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "random.ipynb",
+                        "path": "random.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "strings.py",
+                        "path": "strings.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "tasks.ipynb",
+                        "path": "tasks.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "temp.md",
+                        "path": "temp.md",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "temp.py",
+                        "path": "temp.py",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "temp.txt",
+                        "path": "temp.txt",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "temp_load.ipynb",
+                        "path": "temp_load.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "test_loop.ipynb",
+                        "path": "test_loop.ipynb",
+                        "contentType": "file"
+                    },
+                    {
+                        "name": "while.py",
+                        "path": "while.py",
+                        "contentType": "file"
+                    }
+                ],
+                "totalCount": 68
+            }
+        },
+        "fileTreeProcessingTime": 10.309716,
+        "foldersToFetch": [],
+        "repo": {
+            "id": 593791264,
+            "defaultBranch": "main",
+            "name": "mywork",
+            "ownerLogin": "PeeBs68",
+            "currentUserCanPush": false,
+            "isFork": false,
+            "isEmpty": false,
+            "createdAt": "2023-01-26T21:03:26.000Z",
+            "ownerAvatar": "https://avatars.githubusercontent.com/u/123604058?v=4",
+            "public": true,
+            "private": false,
+            "isOrgOwned": false
+        },
+        "symbolsExpanded": false,
+        "treeExpanded": true,
+        "refInfo": {
+            "name": "main",
+            "listCacheKey": "v0:1674767007.386922",
+            "canEdit": false,
+            "refType": "branch",
+            "currentOid": "55d872189c2f7696f6e2a3ceaa8eebd2c03a91a3"
+        },
+        "path": "WSAA/assignments_testing/temp.txt",
+        "currentUser": null,
+        "blob": {
+            "rawLines": [
+                "one two three four five six seven one eight one one nine ten"
+            ],
+            "stylingDirectives": [
+                []
+            ],
+            "csv": null,
+            "csvError": null,
+            "dependabotInfo": {
+                "showConfigurationBanner": false,
+                "configFilePath": null,
+                "networkDependabotPath": "/PeeBs68/mywork/network/updates",
+                "dismissConfigurationNoticePath": "/settings/dismiss-notice/dependabot_configuration_notice",
+                "configurationNoticeDismissed": null
+            },
+            "displayName": "temp.txt",
+            "displayUrl": "https://github.com/PeeBs68/mywork/blob/main/WSAA/assignments_testing/temp.txt?raw=true",
+            "headerInfo": {
+                "blobSize": "60 Bytes",
+                "deleteTooltip": "You must be signed in to make or propose changes",
+                "editTooltip": "You must be signed in to make or propose changes",
+                "deleteInfo": {
+                    "deleteTooltip": "You must be signed in to make or propose changes"
+                },
+                "editInfo": {
+                    "editTooltip": "You must be signed in to make or propose changes"
+                },
+                "ghDesktopPath": "https://desktop.github.com",
+                "isGitLfs": false,
+                "gitLfsPath": null,
+                "onBranch": true,
+                "shortPath": "6159ba0",
+                "siteNavLoginPath": "/login?return_to=https%3A%2F%2Fgithub.com%2FPeeBs68%2Fmywork%2Fblob%2Fmain%2FWSAA%2Fassignments_testing%2Ftemp.txt",
+                "isCSV": false,
+                "isRichtext": false,
+                "toc": null,
+                "lineInfo": {
+                    "truncatedLoc": "1",
+                    "truncatedSloc": "1"
+                },
+                "mode": "file"
+            },
+            "image": false,
+            "isCodeownersFile": null,
+            "isPlain": false,
+            "isValidLegacyIssueTemplate": false,
+            "issueTemplateHelpUrl": "https://docs.github.com/articles/about-issue-and-pull-request-templates",
+            "issueTemplate": null,
+            "discussionTemplate": null,
+            "language": "Text",
+            "languageID": 372,
+            "large": false,
+            "loggedIn": false,
+            "planSupportInfo": {
+                "repoIsFork": null,
+                "repoOwnedByCurrentUser": null,
+                "requestFullPath": "/PeeBs68/mywork/blob/main/WSAA/assignments_testing/temp.txt",
+                "showFreeOrgGatedFeatureMessage": null,
+                "showPlanSupportBanner": null,
+                "upgradeDataAttributes": null,
+                "upgradePath": null
+            },
+            "publishBannersInfo": {
+                "dismissActionNoticePath": "/settings/dismiss-notice/publish_action_from_dockerfile",
+                "releasePath": "/PeeBs68/mywork/releases/new?marketplace=true",
+                "showPublishActionBanner": false
+            },
+            "rawBlobUrl": "https://github.com/PeeBs68/mywork/raw/main/WSAA/assignments_testing/temp.txt",
+            "renderImageOrRaw": false,
+            "richText": null,
+            "renderedFileInfo": null,
+            "shortPath": null,
+            "symbolsEnabled": true,
+            "tabSize": 8,
+            "topBannersInfo": {
+                "overridingGlobalFundingFile": false,
+                "globalPreferredFundingPath": null,
+                "repoOwner": "PeeBs68",
+                "repoName": "mywork",
+                "showInvalidCitationWarning": false,
+                "citationHelpUrl": "https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files",
+                "actionsOnboardingTip": null
+            },
+            "truncated": false,
+            "viewable": true,
+            "workflowRedirectUrl": null,
+            "symbols": {
+                "timed_out": false,
+                "not_analyzed": true,
+                "symbols": []
+            }
+        },
+        "copilotInfo": null,
+        "copilotAccessAllowed": false,
+        "csrf_tokens": {
+            "/PeeBs68/mywork/branches": {
+                "post": "PgHMFUtTzU_5vdbDLGvS0-js1cEp3MavbBu9l4Q7UKsWT8e1YNwmWNVzb2Crhfld5oMTN7TsuEhJr5veY19cpA"
+            },
+            "/repos/preferences": {
+                "post": "jYlbCD1hk12i2lXY3wp8w6N97AlqDMLc2obKAeJVIRYKsABdpLJ4Ft7wGf6jTjHzHTiby-o7Z5YpJ5Wy6Rjvvw"
+            }
+        }
+    },
+    "title": "mywork/WSAA/assignments_testing/temp.txt at main \u00b7 PeeBs68/mywork"
+}

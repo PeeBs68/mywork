@@ -5,53 +5,24 @@
 # Purpose: Read a file from a repo, make changes to the file and then push it back to the repo
 
 import requests
-import json
-
-# define old and new strings
-original_name = "Andrew"
-new_name = "Phelim"
-
-# pull the file from the repo...
-#
-#
-
-# read in the file and make the change
-# https://www.geeksforgeeks.org/how-to-search-and-replace-text-in-a-file-in-python/
-with open('filename', 'r') as fp:
-    data = fp.read()
-    data = data.replace(original_name, new_name)
-
-# save the changes to the file
-with open('filename', 'w') as fp:
-    fp.write(data)
-
-# write the file back to the repo...
-#
-#
-
-# Will probably need this for the writing back to GitHub
 from config import config as cfg
-url = 'https://api.github.com/repos/PeeBs68/aprivateone'
+from github import Github
 
 apikey = cfg["githubkey"]
-print (apikey)
+g = Github(apikey)
 
-response = requests.get(url, auth=('token',apikey))
-repoJSON = response.json()
+repo = g.get_repo("PeeBs68/mywork")
 
-filename = "aprivateone.txt"
-with open(filename, "w") as fp:
-    json.dump(repoJSON, fp, indent=4)
+fileInfo = repo.get_contents("test.txt")
+urlOfFile = fileInfo.download_url
 
-# Post example here
-# https://www.w3schools.com/python/showpython.asp?filename=demo_requests_post
-#import requests
+response = requests.get(urlOfFile)
+originalcontents = response.text
 
-#url = 'https://www.w3schools.com/python/demopage.php'
-#myobj = {'somekey': 'somevalue'}
+original_str = "two"
+new_str = "bye there"
+newcontents = originalcontents.replace(original_str, new_str)
 
-#x = requests.post(url, json = myobj)
+gitHubResponse=repo.update_file(fileInfo.path,"File Update", newcontents,fileInfo.sha)
+print (gitHubResponse)
 
-#print the response text (the content of the requested file):
-
-#print(x.text)
