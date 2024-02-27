@@ -2,7 +2,7 @@
 
 # Author: Phelim Barry
 
-# Purpose: Read a file from a repo, make changes to the file and then push it back to the repo
+# Purpose: Read a file from a repo, make changes to the data and then push the file back to the repo
 
 import requests
 from config import config as cfg
@@ -12,17 +12,16 @@ apikey = cfg["githubkey"]
 g = Github(apikey)
 
 repo = g.get_repo("PeeBs68/mywork")
+fileinfo = repo.get_contents("test.txt")
+fileurl = fileinfo.download_url
 
-fileInfo = repo.get_contents("test.txt")
-urlOfFile = fileInfo.download_url
-
-response = requests.get(urlOfFile)
+response = requests.get(fileurl)
 originalcontents = response.text
 
-original_str = "two"
-new_str = "bye there"
+original_str = "three"
+new_str = "bye again"
 newcontents = originalcontents.replace(original_str, new_str)
 
-gitHubResponse=repo.update_file(fileInfo.path,"File Update", newcontents,fileInfo.sha)
-print (gitHubResponse)
+response=repo.update_file(fileinfo.path,"File Update", newcontents,fileinfo.sha)
+print (response)
 
