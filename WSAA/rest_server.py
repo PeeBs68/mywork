@@ -16,14 +16,14 @@ def findbyid(id):
 
 @app.route('/books', methods = ['POST'])
 def create():
-    # read JSON...need to test this using POSTMAN
+    # read JSON...need to test this using POSTMAN so as to add the details in JSON format
     jsonstring = request.json
 
     return(f"Create {jsonstring}")
 
 @app.route('/books/<int:id>', methods = ['PUT'])
 def update(id):
-    # read JSON...need to test this using POSTMAN
+    # read JSON...need to test this using POSTMAN so as to add the details in JSON format
     jsonstring = request.json
 
     return(f"Update {id} {jsonstring}")
