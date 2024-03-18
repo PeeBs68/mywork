@@ -1,22 +1,31 @@
 from zstudentDAO import studentDAO
 
-#create student
-latestid = studentDAO.create(('mark', 45))
 
-#find by ID
-result = studentDAO.findbyID(latestid);
-print(result)
+student = {
+  "name":"mark", 
+  "age":31
+  }
+#create
+student = studentDAO.create(student)
+studentid = student["id"]
+# find by id
+result = studentDAO.findByID(studentid);
+print ("test create and find by id")
+print (result)
 
-#update record
-studentDAO.update(("Fred", 51, latestid))
-result = studentDAO.findbyid(latestid);
-print(result)
+#update
+newstudentvalues= {"name":"fred", "age":18}
+studentDAO.update(studentid,newstudentvalues)
+result = studentDAO.findByID(studentid);
+print("test update")
+print (result)
 
-#get all
+# get all 
+print("test get all")
 allStudents = studentDAO.getAll()
 for student in allStudents:
-    print (student)
+  print(student)
 
-#delete
-#studentDAO.delete(latestid)
+# delete
+studentDAO.delete(studentid)
 
