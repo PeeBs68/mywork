@@ -14,7 +14,7 @@ print ("test create and find by id")
 print (result)
 
 #update
-newstudentvalues= {"name":"fred", "age":18}
+newstudentvalues= {"name":"Mary", "age":18}
 studentDAO.update(studentid,newstudentvalues)
 result = studentDAO.findByID(studentid);
 print("test update")
