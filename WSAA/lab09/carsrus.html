@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>View Books</title>
+            <!-- CSS only -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h1>Books</h1>
+        <div>
+            <button id="button-showCreate" onclick="showCreate()">create button</button></div>
+        <div>
+            <table id="bookTable" border="1">
+                <tr>
+                    <th>make</th>
+                    <th>model</th>
+                    <th>colour</th>
+                    <th>price</th>
+                </tr>
+                <tr>
+                    <td>id1</td>
+                    <td>id1</td>
+                    <td>id1</td>
+                    <td>id1</td>
+                </tr>
+            </table>
+        </div>
+        <div id="createUpdateForm" style="display:none">
+
+            <h2>
+            <span id="createLabel">Create a</span>
+            <span id="updateLabel" style="display:none">Update this</span> Book
+            </h2>
+
+            Make <input type="text" value="enter make here" id="name"/><br/>
+            Model <input type="text" title="title"/><br/>
+            Colour <input type="text", author="author"/><br/>
+            Price <input type="int" ,price="price"/><br/>
+
+            <span><button id="button-doCreate" onclick="doCreate()">Create</button></span>
+            <span><button id="button-doUpdate" onclick="">Update</button></span>
+        </div>
+
+    </body>
+
+<script>
+    function showCreate(){
+        document.getElementById("button-showCreate").style.display="none"
+        document.getElementById("bookTable").style.display="none"
+        document.getElementById("createUpdateForm").style.display="block"
+        document.getElementById("createLabel").style.display="inline"
+        document.getElementById("updateLabel").style.display="none"
+        document.getElementById("button-doCreate").style.display="block"
+    }
+
+</script>
+
+</html>
